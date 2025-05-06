@@ -148,16 +148,6 @@
   </style>
 </head>
 <body>
-  <nav>
-    <h1>Devraj Kumar</h1>
-    <ul>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#students">Students</a></li>
-      <li><a href="#schools">Schools</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
   <div class="container">
     <section>
