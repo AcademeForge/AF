@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Devraj Kumar | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -25,13 +25,14 @@
       color: #fff;
       padding: 1rem 2rem;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
 
     nav h1 {
-      font-size: 1.5rem;
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
     }
 
     nav ul {
@@ -46,6 +47,7 @@
       color: #fff;
       font-weight: 500;
       transition: color 0.3s ease;
+      font-size: clamp(0.9rem, 2.5vw, 1rem);
     }
 
     nav ul li a:hover {
@@ -53,21 +55,21 @@
     }
 
     .container {
-      padding: 2rem;
+      padding: 1.5rem;
       max-width: 1100px;
       margin: auto;
     }
 
     section {
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
       background: #fff;
-      padding: 2rem;
+      padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
       opacity: 0;
       transform: translateY(30px);
       animation: fadeInUp 0.8s ease forwards;
+      word-break: break-word;
     }
 
     section:hover {
@@ -89,10 +91,12 @@
     h2 {
       margin-bottom: 1rem;
       color: #222;
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
     }
 
     p {
       margin-bottom: 0.8rem;
+      font-size: clamp(0.95rem, 3vw, 1.1rem);
     }
 
     .video-container {
@@ -103,7 +107,7 @@
 
     iframe {
       width: 100%;
-      height: 300px;
+      aspect-ratio: 16 / 9;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
@@ -120,6 +124,11 @@
       margin: 0.5rem 0;
     }
 
+    .contact a {
+      color: #00adb5;
+      word-break: break-word;
+    }
+
     @media (max-width: 768px) {
       nav {
         flex-direction: column;
@@ -128,12 +137,12 @@
 
       nav ul {
         flex-direction: column;
-        gap: 0.75rem;
-        margin-top: 1rem;
+        gap: 0.5rem;
+        margin-top: 0.75rem;
       }
 
-      iframe {
-        height: 200px;
+      .container {
+        padding: 1rem;
       }
     }
   </style>
@@ -188,8 +197,8 @@
 
     <section id="contact" class="contact">
       <h2>Let’s Connect</h2>
-      <p>Email: <a href="mailto:devrajkumar.contact@gmail.com" style="color: #00adb5">devrajkumar.contact@gmail.com</a></p>
-      <p>Instagram: <a href="https://instagram.com/devrajkumar.in" style="color: #00adb5">@devrajkumar.in</a></p>
+      <p>Email: <a href="mailto:devrajkumar.contact@gmail.com">devrajkumar.contact@gmail.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/devrajkumar.in">@devrajkumar.in</a></p>
     </section>
   </div>
 </body>
