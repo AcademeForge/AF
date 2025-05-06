@@ -57,8 +57,8 @@
       <h2 class="text-2xl font-bold mb-6">My Work & Projects</h2>
       <p class="mb-8">Here’s how I create and what I’ve done. Watch my project demos:</p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <iframe class="w-full h-64 rounded-xl" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" allowfullscreen></iframe>
-        <iframe class="w-full h-64 rounded-xl" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" allowfullscreen></iframe>
+        <iframe class="w-full h-64 rounded-xl" src="https://youtu.be/7vpK_CvYYG8?si=SysN7OS2qmJNUnsY" allowfullscreen></iframe>
+        <iframe class="w-full h-64 rounded-xl" src="https://youtu.be/K9C5PWlfoH0?si=S23bfGMT82L2olzz" allowfullscreen></iframe>
       </div>
     </div>
   </section>  <!-- Contact -->  <section id="contact" class="py-16 px-4 bg-white text-center">
