@@ -1,229 +1,80 @@
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sri Ram Academy</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sri Ram Academy</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f8f9fa;
-      color: #333;
-    }
-    header {
-      background-color: #004AAD;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background: #003B8B;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 40px 20px;
-      background: white;
-      margin: 20px auto;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      max-width: 1000px;
-    }
-    footer {
-      text-align: center;
-      background: #002D6A;
-      color: white;
-      padding: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      max-width: 250px;
-      margin: 10px;
-      border-radius: 10px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .team {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .team-member {
-      width: 100%;
-      max-width: 250px;
-      text-align: center;
-    }
-    .team-member img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    @media (max-width: 600px) {
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      nav a {
-        margin: 5px 10px;
-      }
-    }
-  </style>
-</head>
-<body>  <header>
-    <h1>Sri Ram Academy</h1>
-    <p>Empowering Education for a Better Tomorrow</p>
-  </header>  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="admission.html">Admission</a>
-    <a href="contact.html">Contact</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="location.html">Location</a>
-  </nav>  <section>
-    <h2>Welcome to Sri Ram Academy</h2>
-    <p>We are committed to nurturing young minds with value-based education and a joyful learning experience. Explore our vibrant community and enroll your child for a brighter future.</p>
-  </section>  <section>
-    <h2>Our Team</h2>
-    <div class="team">
-      <div class="team-member">
-        <img src="principal.jpg" alt="Principal">
-        <h3>Principal</h3>
-        <p>"Education is the most powerful weapon to change the world."</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Ram Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-blue-800 text-white p-6 text-center">
+      <h1 class="text-3xl font-bold">Sri Ram Academy</h1>
+      <p class="text-lg mt-1">Empowering Education for a Better Tomorrow</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-blue-700 text-white flex justify-center gap-6 py-3">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="about.html" class="hover:underline">About</a>
+      <a href="admission.html" class="hover:underline">Admission</a>
+      <a href="contact.html" class="hover:underline">Contact</a>
+      <a href="gallery.html" class="hover:underline">Gallery</a>
+      <a href="location.html" class="hover:underline">Location</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-12 px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4">Welcome to Sri Ram Academy</h2>
+      <p class="text-lg max-w-2xl mx-auto">A nurturing place where learning meets values. Shaping future leaders through discipline, dedication, and care.</p>
+      <a href="admission.html" class="mt-6 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">Apply Now</a>
+    </section>
+
+    <!-- Principal & Teacher Thoughts -->
+    <section class="py-12 px-4 bg-gray-100">
+      <h3 class="text-2xl font-semibold text-center mb-8">Meet Our Educators</h3>
+      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+        <div>
+          <img src="principal.jpg" alt="Principal" class="mx-auto rounded-lg w-40 h-40 object-cover mb-4 shadow-lg" />
+          <h4 class="font-bold text-xl">Principal</h4>
+          <p class="text-sm italic mt-2">"Education is the most powerful weapon to change the world."</p>
+        </div>
+        <div>
+          <img src="teacher1.jpg" alt="Teacher 1" class="mx-auto rounded-lg w-40 h-40 object-cover mb-4 shadow-lg" />
+          <h4 class="font-bold text-xl">Mrs. Sharma</h4>
+          <p class="text-sm italic mt-2">"Inspiring curiosity and critical thinking every day."</p>
+        </div>
+        <div>
+          <img src="teacher2.jpg" alt="Teacher 2" class="mx-auto rounded-lg w-40 h-40 object-cover mb-4 shadow-lg" />
+          <h4 class="font-bold text-xl">Mr. Verma</h4>
+          <p class="text-sm italic mt-2">"Building minds with values and vision."</p>
+        </div>
       </div>
-      <div class="team-member">
-        <img src="teacher1.jpg" alt="Teacher">
-        <h3>Mrs. Sharma - Science Teacher</h3>
-        <p>"Inspiring curiosity and critical thinking every day."</p>
+    </section>
+
+    <!-- Quick Info Grid -->
+    <section class="py-12 px-4 bg-white">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="p-6 shadow rounded bg-blue-100">
+          <h5 class="text-xl font-bold">Admission Open</h5>
+          <p class="mt-2">Session 2025 now accepting students. Call +91 90974 81021</p>
+        </div>
+        <div class="p-6 shadow rounded bg-green-100">
+          <h5 class="text-xl font-bold">School Location</h5>
+          <p class="mt-2">Sakaohra Road, Berhna<br/>Click “Location” above for directions.</p>
+        </div>
+        <div class="p-6 shadow rounded bg-yellow-100">
+          <h5 class="text-xl font-bold">Gallery</h5>
+          <p class="mt-2">See our classrooms, labs, sports & cultural activities.</p>
+        </div>
       </div>
-    </div>
-  </section>  <footer>
-    &copy; 2025 Sri Ram Academy. All Rights Reserved.
-  </footer></body>
-</html> 0;
-      background: #f8f9fa;
-      color: #333;
-    }
-    header {
-      background-color: #004AAD;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background: #003B8B;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 40px 20px;
-      background: white;
-      margin: 20px auto;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      max-width: 1000px;
-    }
-    footer {
-      text-align: center;
-      background: #002D6A;
-      color: white;
-      padding: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      max-width: 250px;
-      margin: 10px;
-      border-radius: 10px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .team {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .team-member {
-      width: 100%;
-      max-width: 250px;
-      text-align: center;
-    }
-    .team-member img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    @media (max-width: 600px) {
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      nav a {
-        margin: 5px 10px;
-      }
-    }
-  </style>
-</head>
-<body>  <header>
-    <h1>Sri Ram Academy</h1>
-    <p>Empowering Education for a Better Tomorrow</p>
-  </header>  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="admission.html">Admission</a>
-    <a href="contact.html">Contact</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="location.html">Location</a>
-  </nav>  <section>
-    <h2>Welcome to Sri Ram Academy</h2>
-    <p>We are committed to nurturing young minds with value-based education and a joyful learning experience. Explore our vibrant community and enroll your child for a brighter future.</p>
-  </section>  <section>
-    <h2>Our Team</h2>
-    <div class="team">
-      <div class="team-member">
-        <img src="principal.jpg" alt="Principal">
-        <h3>Principal</h3>
-        <p>"Education is the most powerful weapon to change the world."</p>
-      </div>
-      <div class="team-member">
-        <img src="teacher1.jpg" alt="Teacher">
-        <h3>Mrs. Sharma - Science Teacher</h3>
-        <p>"Inspiring curiosity and critical thinking every day."</p>
-      </div>
-    </div>
-  </section>  <footer>
-    &copy; 2025 Sri Ram Academy. All Rights Reserved.
-  </footer></body>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white text-center py-6 mt-10">
+      <p>&copy; 2025 Sri Ram Academy. All rights reserved.</p>
+    </footer>
+
+  </body>
 </html>
