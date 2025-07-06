@@ -21,7 +21,6 @@
       <a href="admission.html" class="hover:underline">Admission</a>
       <a href="contact.html" class="hover:underline">Contact</a>
       <a href="gallery.html" class="hover:underline">Gallery</a>
-      <a href="location.html" class="hover:underline">Location</a>
     </nav>
 
     <!-- Hero Section -->
