@@ -1,4 +1,4 @@
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -23,16 +23,20 @@
     }
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
       padding: 40px 20px;
       background: white;
-      margin: 20px;
+      margin: 20px auto;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 1000px;
     }
     footer {
       text-align: center;
@@ -41,9 +45,15 @@
       padding: 20px;
     }
     .gallery img {
-      width: 200px;
+      width: 100%;
+      max-width: 250px;
       margin: 10px;
       border-radius: 10px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     .team {
       display: flex;
@@ -52,12 +62,23 @@
       justify-content: center;
     }
     .team-member {
-      width: 250px;
+      width: 100%;
+      max-width: 250px;
       text-align: center;
     }
     .team-member img {
       width: 100%;
       border-radius: 10px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      nav a {
+        margin: 5px 10px;
+      }
     }
   </style>
 </head>
@@ -65,42 +86,16 @@
     <h1>Sri Ram Academy</h1>
     <p>Empowering Education for a Better Tomorrow</p>
   </header>  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#admission">Admission</a>
-    <a href="#contact">Contact</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#location">Location</a>
-  </nav>  <section id="home">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="admission.html">Admission</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="location.html">Location</a>
+  </nav>  <section>
     <h2>Welcome to Sri Ram Academy</h2>
     <p>We are committed to nurturing young minds with value-based education and a joyful learning experience. Explore our vibrant community and enroll your child for a brighter future.</p>
-  </section>  <section id="about">
-    <h2>About Us</h2>
-    <p>Sri Ram Academy is a progressive school dedicated to academic excellence and holistic development. With experienced teachers and modern infrastructure, we foster curiosity, creativity, and leadership in every student.</p>
-  </section>  <section id="admission">
-    <h2>Admission</h2>
-    <p>Admissions are now open for the academic year 2025. Contact us for a campus tour and application form.</p>
-    <ul>
-      <li>Phone: +91 90974 81021</li>
-      <li>Address: Sakaohra Road, Berhna</li>
-    </ul>
-  </section>  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>For inquiries and support:</p>
-    <p>Email: info@sriramacademy.in<br>Phone: +91 90974 81021</p>
-  </section>  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="principal.jpg" alt="Principal">
-      <img src="classroom.jpg" alt="Classroom">
-      <img src="sports.jpg" alt="Sports Activity">
-      <!-- Add more images -->
-    </div>
-  </section>  <section id="location">
-    <h2>Our Location</h2>
-    <p>Sakaohra Road, Berhna</p>
-    <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </section>  <section id="team">
+  </section>  <section>
     <h2>Our Team</h2>
     <div class="team">
       <div class="team-member">
@@ -113,7 +108,6 @@
         <h3>Mrs. Sharma - Science Teacher</h3>
         <p>"Inspiring curiosity and critical thinking every day."</p>
       </div>
-      <!-- Add more teachers if needed -->
     </div>
   </section>  <footer>
     &copy; 2025 Sri Ram Academy. All Rights Reserved.
