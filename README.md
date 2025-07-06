@@ -1,114 +1,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AcademeForge</title>
-  <link rel="stylesheet" href="style.css" />
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle('dark');
-      const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
-      localStorage.setItem('theme', theme);
-    }window.onload = () => {
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') document.body.classList.add('dark');
-};
-
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sri Ram Academy</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #222;
-      transition: background 0.3s, color 0.3s;
+      margin: 0; padding: 0;
+      background: #f8f9fa;
+      color: #333;
     }
-    header, footer {
-      background: #003366;
+    header {
+      background-color: #004AAD;
       color: white;
+      padding: 20px;
       text-align: center;
-      padding: 20px;
     }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
+    nav {
+      background: #003B8B;
+      padding: 10px;
+      text-align: center;
     }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 20px 0;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .button {
-      display: inline-block;
-      background: #003366;
+    nav a {
       color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
+      margin: 0 15px;
       text-decoration: none;
-      margin-top: 10px;
+      font-weight: bold;
     }
-    .theme-toggle {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      background: #003366;
+    section {
+      padding: 40px 20px;
+      background: white;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      background: #002D6A;
       color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      cursor: pointer;
-      z-index: 999;
+      padding: 20px;
     }
-    body.dark {
-      background: #121212;
-      color: #eee;
+    .gallery img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
     }
-    body.dark .card {
-      background: #1e1e1e;
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
-    body.dark header, body.dark footer, body.dark .theme-toggle {
-      background: #000;
+    .team-member {
+      width: 250px;
+      text-align: center;
+    }
+    .team-member img {
+      width: 100%;
+      border-radius: 10px;
     }
   </style>
 </head>
-<body><button class="theme-toggle" onclick="toggleTheme()">🌓 Theme</button>
-
-<header>
-  <h1>AcademeForge</h1>
-  <p># Your go-to resource hub for Class 9 & 10 students</p>
-</header><div class="container">
-  <div class="card">
-    <h2>📘 Sample Notes</h2>
-    <p>Download sample chapters:</p>
+<body>  <header>
+    <h1>Sri Ram Academy</h1>
+    <p>Empowering Education for a Better Tomorrow</p>
+  </header>  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#admission">Admission</a>
+    <a href="#contact">Contact</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#location">Location</a>
+  </nav>  <section id="home">
+    <h2>Welcome to Sri Ram Academy</h2>
+    <p>We are committed to nurturing young minds with value-based education and a joyful learning experience. Explore our vibrant community and enroll your child for a brighter future.</p>
+  </section>  <section id="about">
+    <h2>About Us</h2>
+    <p>Sri Ram Academy is a progressive school dedicated to academic excellence and holistic development. With experienced teachers and modern infrastructure, we foster curiosity, creativity, and leadership in every student.</p>
+  </section>  <section id="admission">
+    <h2>Admission</h2>
+    <p>Admissions are now open for the academic year 2025. Contact us for a campus tour and application form.</p>
     <ul>
-      <li>Class 9 Science – Chapter 1: <a href="#" class="button">Download</a></li>
-      <li>Class 10 SST – Important Topics: <a href="#" class="button">Download</a></li>
+      <li>Phone: +91 90974 81021</li>
+      <li>Address: Sakaohra Road, Berhna</li>
     </ul>
-  </div>  <div class="card">
-    <h2>📝 School Purchase (₹500)</h2>
-    <p>Schools can purchase full PDF access and distribute among students.</p>
-    <a href="#" class="button">Contact via WhatsApp</a>
-  </div>  <div class="card">
-    <h2>🔥 Weekly Quiz</h2>
-    <p>Attempt 5 MCQs each week to test your preparation.</p>
-    <a href="quiz.html" class="button">Attempt Quiz</a>
-  </div>  <div class="card">
-    <h2>📚 Blog</h2>
-    <p>Helpful articles for students:</p>
-    <ul>
-      <li><a href="blog.html"># How to Score 95+ in Class 10</a></li>
-      <li><a href="blog.html"># Most Important Questions for Term 1</a></li>
-    </ul>
-  </div>  <div class="card">
-    <h2>🎯 AST 2025</h2>
-    <p>Registration for AcademeForge Scholars Test will open soon.</p>
-    <a href="ast.html" class="button"># Register for AST</a>
-  </div>
-</div><footer>
-  <p>&copy; 2025 AcademeForge | Empowering Young Minds</p>
-</footer></body>
+  </section>  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>For inquiries and support:</p>
+    <p>Email: info@sriramacademy.in<br>Phone: +91 90974 81021</p>
+  </section>  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="principal.jpg" alt="Principal">
+      <img src="classroom.jpg" alt="Classroom">
+      <img src="sports.jpg" alt="Sports Activity">
+      <!-- Add more images -->
+    </div>
+  </section>  <section id="location">
+    <h2>Our Location</h2>
+    <p>Sakaohra Road, Berhna</p>
+    <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>  <section id="team">
+    <h2>Our Team</h2>
+    <div class="team">
+      <div class="team-member">
+        <img src="principal.jpg" alt="Principal">
+        <h3>Principal</h3>
+        <p>"Education is the most powerful weapon to change the world."</p>
+      </div>
+      <div class="team-member">
+        <img src="teacher1.jpg" alt="Teacher">
+        <h3>Mrs. Sharma - Science Teacher</h3>
+        <p>"Inspiring curiosity and critical thinking every day."</p>
+      </div>
+      <!-- Add more teachers if needed -->
+    </div>
+  </section>  <footer>
+    &copy; 2025 Sri Ram Academy. All Rights Reserved.
+  </footer></body>
 </html>
