@@ -1,79 +1,86 @@
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sri Ram Academy</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-gray-50 text-gray-800">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirect Page</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <!-- Header -->
-    <header class="bg-blue-800 text-white p-6 text-center">
-      <h1 class="text-3xl font-bold">Sri Ram Academy</h1>
-      <p class="text-lg mt-1">Empowering Education for a Better Tomorrow</p>
-    </header>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      font-family: 'Inter', sans-serif;
+      color: #333;
+    }
 
-    <!-- Navigation -->
-    <nav class="bg-blue-700 text-white flex justify-center gap-6 py-3">
-      <a href="index.html" class="hover:underline">Home</a>
-      <a href="about.html" class="hover:underline">About</a>
-      <a href="admission.html" class="hover:underline">Admission</a>
-      <a href="contact.html" class="hover:underline">Contact</a>
-      <a href="gallery.html" class="hover:underline">Gallery</a>
-    </nav>
+    .card {
+      background: white;
+      padding: 3rem 4rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-    <!-- Hero Section -->
-    <section class="bg-white py-12 px-4 text-center">
-      <h2 class="text-4xl font-bold mb-4">Welcome to Sri Ram Academy</h2>
-      <p class="text-lg max-w-2xl mx-auto">A nurturing place where learning meets values. Shaping future leaders through discipline, dedication, and care.</p>
-      <a href="admission.html" class="mt-6 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">Apply Now</a>
-    </section>
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
 
-    <!-- Principal & Teacher Thoughts -->
-    <section class="py-12 px-4 bg-gray-100">
-      <h3 class="text-2xl font-semibold text-center mb-8">Meet Our Educators</h3>
-      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
-        <div>
-          <img src="principal.jpg" alt="Principal" class="mx-auto rounded-lg w-40 h-40 object-cover mb-4 shadow-lg" />
-          <h4 class="font-bold text-xl">Principal</h4>
-          <p class="text-sm italic mt-2">"Education is the most powerful weapon to change the world."</p>
-        </div>
-        <div>
-          <img src="teacher1.jpg" alt="Teacher 1" class="mx-auto rounded-lg w-40 h-40 object-cover mb-4 shadow-lg" />
-          <h4 class="font-bold text-xl">Mrs. Sharma</h4>
-          <p class="text-sm italic mt-2">"Inspiring curiosity and critical thinking every day."</p>
-        </div>
-        <div>
-          <img src="teacher2.jpg" alt="Teacher 2" class="mx-auto rounded-lg w-40 h-40 object-cover mb-4 shadow-lg" />
-          <h4 class="font-bold text-xl">Mr. Verma</h4>
-          <p class="text-sm italic mt-2">"Building minds with values and vision."</p>
-        </div>
-      </div>
-    </section>
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: #222;
+    }
 
-    <!-- Quick Info Grid -->
-    <section class="py-12 px-4 bg-white">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-        <div class="p-6 shadow rounded bg-blue-100">
-          <h5 class="text-xl font-bold">Admission Open</h5>
-          <p class="mt-2">Session 2025 now accepting students. Call +91 90974 81021</p>
-        </div>
-        <div class="p-6 shadow rounded bg-green-100">
-          <h5 class="text-xl font-bold">School Location</h5>
-          <p class="mt-2">Sakaohra Road, Berhna<br/>Click “Location” above for directions.</p>
-        </div>
-        <div class="p-6 shadow rounded bg-yellow-100">
-          <h5 class="text-xl font-bold">Gallery</h5>
-          <p class="mt-2">See our classrooms, labs, sports & cultural activities.</p>
-        </div>
-      </div>
-    </section>
+    p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      color: #666;
+    }
 
-    <!-- Footer -->
-    <footer class="bg-blue-800 text-white text-center py-6 mt-10">
-      <p>&copy; 2025 Sri Ram Academy. All rights reserved.</p>
-    </footer>
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,123,255,0.2);
+    }
 
-  </body>
+    button:hover {
+      background: #0056b3;
+      box-shadow: 0 8px 20px rgba(0,86,179,0.35);
+      transform: translateY(-2px);
+    }
+
+    button:active {
+      transform: translateY(0);
+      box-shadow: 0 5px 12px rgba(0,86,179,0.25);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>You’re about to continue</h2>
+    <p>Click below to proceed to the destination.</p>
+    <button onclick="window.location.href='https://academeforge.github.io/AcademeForge/'">
+      Continue →
+    </button>
+  </div>
+</body>
 </html>
